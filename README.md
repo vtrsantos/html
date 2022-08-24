@@ -1,2 +1,80 @@
-# html
-Itens HTML da aula 1
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video HTML - Victor Rodrigues dos Santos </title>
+</head>
+<!--MUDANDO A COR DO BACKGROUND e DAS LETRAS-->
+
+<body style="background-color: rgb(0, 0, 0); color: rgb(255, 0, 144)">
+    <!--TITULOS-->
+    <h1>Maior titulo possivel</h1>
+    <br>
+    <h2>Titulo</h2>
+    <br>
+    <h3>Titulo</h3>
+    <br>
+    <h4>Titulo</h4>
+    <br>
+    <h5>Titulo</h5>
+    <br>
+    <h6>Menor titulo possivel</h6>
+    <br>
+    <p style="color: green ;"> Criando um paragrafo </p>
+    <br><br>
+
+    <!--LOREM + SPAN-->
+    <span style="color: orange;">Usando Lorem ipsum DENTRO DE UMA SPAN dolor sit amet consectetur adipisicing elit.
+        Unde, soluta. Quasi
+        tempora ut neque nemo sapiente totam tenetur fuga expedita laborum suscipit exercitationem cumque debitis, saepe
+        nihil doloribus magnam dicta.</span>
+    <br><br>
+
+    <!--FORMATAÇÃO DA ESCRITA-->
+    <p style="color: blue ;">Utilizando o <strong>STRONG</strong> e o <b>BOLD</b>
+        <br><br>
+        Utilizando o <i>ITALICO</i>.
+        <br><br>
+        Utilizando o <u>SUBLINHADO</u>
+        <br><br>
+        <b><i><u>Utilizando NEGRITO, ITALICO e SUBLINHADO</u></i></b>
+        <br><br>
+    </p>
+
+    <!--INSERINDO IMAGEM DA SP TECH INTERNATIONAL E REDIMENSIONANDO PARA 200X200-->
+    <img src="https://www.sptech.school/assets/images/body/faculdade/int/International_logo.png"
+        alt="Logo SPTECH Internetional" width="200" height="200" />
+    <br><br>
+
+    <!--INSERINDO BOTÃO, INPUT E DIV-->
+    <input type="text" name="" id="ipt_entrada" placeholder="DIGITE UM NUMERO">
+    <br><br>
+    <button onclick="teste()">SEU NUMERO +1</button>
+    <br><br>
+    <div id="div_teste"></div>
+
+    <!--INSERINDO BOTÃO, INPUT E DIV NA DIREITA-->
+    <div style="float: right;"><input type="text" name="" id="ipt_entrada1" placeholder="DIGITE UM NUMERO">
+        <br><br>
+        <button onclick="teste1()">SEU NUMERO -1</button>
+        <br><br>
+        <div id="div_teste1"></div>
+    </div>
+
+
+</body>
+
+</html>
+<script> function teste() {
+        var ax_input = Number(ipt_entrada.value)
+        div_teste.innerHTML += `<br> ${ax_input += 1}`
+    }
+    function teste1() {
+        var ax_input1 = Number(ipt_entrada1.value)
+        div_teste.innerHTML += `<br> ${ax_input1 -= 1}`
+    }
+
+</script>
